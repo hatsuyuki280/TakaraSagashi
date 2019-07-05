@@ -1,5 +1,5 @@
 from time import sleep
-from urllib3 import request
+from urllib3 import request, PoolManager
 from bs4 import BeautifulSoup
 
 
@@ -30,7 +30,8 @@ class SurugayaParser():
 
     def _parse_from_url(self, page=1):
         url = self.target_url + '&page=' + str(page)
-        html = request.urlopen(url)
+        http = PoolManager()
+        html = http.request('GET', url).data
         return self._parse_html(html)
 
     def _parse_html(self, html):

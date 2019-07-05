@@ -2,7 +2,7 @@
 ## install
 sudo su - || su -
 
-apt install git python3 python3-pip python3-dev -y 1&2> /dev/none
+apt install git python3 python3-pip python3-dev nginx -y 1&2> /dev/none
 
 pip3 install --upgrade pip3 setuptools
 pip3 install pipenv

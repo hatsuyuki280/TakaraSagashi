@@ -3,11 +3,9 @@
 ## init
 sudo su - || su -
 
-apt install git python3 python3-pip
+apt install git python3 python3-pip nginx -y 1&2> /dev/none
 
 pip3 install --upgrade pip3 setuptools
 pip3 install pipenv
 pipenv update
 
-
-virtualenv -p $(python3 -V | grep -o 3..) .env
