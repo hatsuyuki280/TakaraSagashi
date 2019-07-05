@@ -11,6 +11,8 @@ pipenv update
 pipenv install bs4 parse lxml flask uwsgi urllib3
 
 mkdir -p /yuki/soft/NekoSearch && cd /yuki/soft/NekoSearch
-wget 
+mkdir surugayaparser
+wget https://github.com/hatsuyuki280/surugayaparser/raw/master/surugayaparser/surugayaparser.py -O- ./surugayaparser/surugayaparser.py
+wget https://github.com/hatsuyuki280/surugayaparser/raw/master/surugayaparser/__init__.py -O- ./surugayaparser/__init__.py
 
-cd surugayaparser
+
