@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/api")
 def api():
-    jhws
+    return jhws()
 
 @app.route("/helloWorld")
 def helloWorld():
