@@ -1,15 +1,17 @@
-from flask import Flask
-from TakaraSagashi.JHWS import jhws
+#! /usr/bin/env python3
+
+from flask import Flask, jsonify
+from JHWS import jhws
 
 app = Flask(__name__)
 
 @app.route("/api")
 def api():
-    return jhws()
+    return jsonify(jhws())
 
 @app.route("/helloWorld")
 def helloWorld():
     return "Hello World"
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8987, debug=True)
+    app.run(host='127.0.0.1', port=8987, debug=True)
