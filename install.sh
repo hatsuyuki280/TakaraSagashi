@@ -8,7 +8,7 @@ pip3 install --upgrade pip3 setuptools
 pip3 install pipenv
 
 pipenv update
-pipenv install bs4 parse lxml flask uwsgi
+pipenv install bs4 parse lxml flask uwsgi urllib3
 
 mkdir -p /yuki/soft/NekoSearch && cd /yuki/soft/NekoSearch
 wget 
