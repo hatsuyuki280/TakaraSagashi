@@ -1,0 +1,1 @@
+from .yahoosearch import YahooSearch

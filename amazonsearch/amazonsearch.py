@@ -3,8 +3,8 @@ from urllib3 import request, PoolManager
 from bs4 import BeautifulSoup
 
 
-class SurugayaParser():
-    BASE_URL = 'https://www.suruga-ya.jp/search'
+class AmazonSearch():
+    BASE_URL = 'http://www.suruga-ya.jp/search'
 
     def __init__(self):
         self.is_firstrequest = True

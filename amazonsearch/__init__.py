@@ -1,0 +1,1 @@
+from .amazonsearch import AmazonSearch

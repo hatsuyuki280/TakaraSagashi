@@ -3,7 +3,7 @@ from urllib3 import request, PoolManager
 from bs4 import BeautifulSoup
 
 
-class SurugayaParser():
+class YahooSearch():
     BASE_URL = 'https://www.suruga-ya.jp/search'
 
     def __init__(self):
