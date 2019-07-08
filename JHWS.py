@@ -1,8 +1,8 @@
 from surugayaparser import SurugayaParser
 
-def jhws():
+def jhws(Category="", kwd="...", r18=1, instock="On"):
     instance = SurugayaParser()
-    getparam = "category=&search_word=nekopara&adult_s=1&inStock=On&grid=t&rankBy=modificationTime%3Adescending"
+    getparam = "category="+Category+"&search_word="+kwd+"&adult_s="+str(r18)+"&inStock="+instock+"&grid=t&rankBy=modificationTime%3Adescending"
     instance.set_target_url(getparam)
     items = instance.request_items(pages=1)
     # print(items)
